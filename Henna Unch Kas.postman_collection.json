@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "65d475e3-638b-4528-b618-83e30d661cbd",
+		"name": "Henna Unch Kas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MENAMPILKAN OBAT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/anggota",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"anggota"
+					]
+				},
+				"description": "Menampilkan Semua Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "TAMBAH OBAT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"MultiVitamin\",\r\n    \"harga\" : 50000,\r\n    \"stok\" : 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/obat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"obat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TAMBAH PAKAN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"Whiskas 1.2 KG\",\r\n    \"harga\" : 70000,\r\n    \"stok\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/makanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"makanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TAMBAH PERLENGKAPAN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\" : \"KANDANG LIPAT BESAR\",\r\n    \"harga\" : 400000,\r\n    \"stok\" : 15\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/perlengkapan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"perlengkapan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UBAH OBAT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 1,\r\n    \"nama\" : \"NGANU\",\r\n    \"harga\" : 70000,\r\n    \"stok\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/obat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"obat"
+					]
+				},
+				"description": "Ubah Data Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "UBAH PAKAN",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 1,\r\n    \"nama\" : \"WHISking\",\r\n    \"harga\" : 80000,\r\n    \"stok\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/makanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"makanan"
+					]
+				},
+				"description": "Ubah Data Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "UBAH PERLENGKAPAN",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 1,\r\n    \"nama\" : \"Kandangmu\",\r\n    \"harga\" : 500000,\r\n    \"stok\" : 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/perlengkapan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"perlengkapan"
+					]
+				},
+				"description": "Ubah Data Anggota"
+			},
+			"response": []
+		},
+		{
+			"name": "HAPUS OBAT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/obat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"obat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HAPUS PAKAN",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/makanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"makanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HAPUS PERLENGKAPAN",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/perlengkapan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"perlengkapan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MENAMPILKAN PAKAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/makanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"makanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MENAMPILKAN PERLENGKAPAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/perlengkapan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"perlengkapan"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
